@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 
 import styles from '../../styles/Username.module.css';
 import extend from '../../styles/Profile.module.css'
-<<<<<<< HEAD
+
 
 export default function Profile() {
 
@@ -111,7 +111,7 @@ export default function Profile() {
     </div>
   )
 }
-=======
+
 import Header from '../layout/header';
 import Card from 'react-bootstrap/Card';
 export default function Profile() {
@@ -253,4 +253,3 @@ export default function Profile() {
 //     </div>
 //   )
 // }
->>>>>>> 1b80af36ae2277984052fece04ef15b2757a3d67
