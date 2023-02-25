@@ -20,7 +20,6 @@ import SidebarCandidat from './components/layout/sidebarCondidat';
 import DashbordR from './components/private/recruteur/dashbord';
 import ProfileR from './components/auth/profileR';
 import Contact from './components/contact/contact';
-import Home from './components/home/pages/home';
 const router = createBrowserRouter([
     {
         path : '/',
