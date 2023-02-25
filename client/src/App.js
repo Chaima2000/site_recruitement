@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Password from './components/auth/Password';
 import Profile from './components/auth/Profile';
@@ -9,14 +9,12 @@ import Formation from './components/private/condidat/formation';
 import FormationR from './components/private/recruteur/formation';
 import Recruter from './components/private/recruteur/recruter';
 import Recovery from './components/auth/Recovery';
-import SidebarRecruteur from './components/layout/sidebarRecruteur';
 import Register from './components/auth/Register';
 import  { AuthorizeUser, ProtectRoute } from'././middleware/auth';
 import PageNotFound from './components/PageNotFound';
 import Reset from './components/auth/Reset';
 import Username from './components/auth/Username';
 import Dashbord from './components/private/condidat/Dashboard/Dashbord';
-import SidebarCandidat from './components/layout/sidebarCondidat';
 import DashbordR from './components/private/recruteur/dashbord';
 import ProfileR from './components/auth/profileR';
 import Contact from './components/contact/contact';
@@ -92,14 +90,6 @@ const router = createBrowserRouter([
         element : <Recruter></Recruter>
     },
     {
-        path : '/sidbar',
-        element : <SidebarCandidat></SidebarCandidat>
-    },
-    {
-        path : '/sidebar',
-        element : <SidebarRecruteur></SidebarRecruteur>
-    },
-    {
         path : '*',
         element : <PageNotFound></PageNotFound>
     },
@@ -107,15 +97,21 @@ const router = createBrowserRouter([
 
 
 export default function App() {
-    const [isLoading, setLoading] = useState(true);
+    // const [isLoading, setLoading] = useState(true);
 
-  // timer for spinner
-  setTimeout(() => {
-    setLoading(false);
-  }, 1500);
+    // timer for spinner
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 1500);
+  
   return (
+    <>
+    
     <main>
+    
        <RouterProvider router={router}></RouterProvider>
+       
     </main>
+    </>
   )
 }

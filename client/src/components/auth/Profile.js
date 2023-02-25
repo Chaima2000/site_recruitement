@@ -62,8 +62,8 @@ export default function Profile() {
        <div  className='flex'>
     <Card className='cardModif '>
     <div>
-<div className='ml-20 mt-12'>General information</div>
-<form className='py-1 mt-12' onSubmit={formik.handleSubmit}>
+      <div className='ml-20 mt-12'>General information</div>
+      <form className='py-1 mt-12' onSubmit={formik.handleSubmit}>
         <div className="textbox flex flex-col items-center gap-6">
             <div className="name flex w-3/4 gap-10">
             <input {...formik.getFieldProps('firstName')} className={`${styles.textbox} ${extend.textbox}`} type="text" placeholder='FirstName' />
