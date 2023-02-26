@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 15px;
+  height: 500px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  height: 80px;
+  width: 33.33%; 
+  display: none; /* Hide all elements by default */
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 96%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #dc5539;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #bc3c21;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #bc3c21;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 style="color: #C9CC3F;">Conseils de recrutement</h1>
+<hr>
+
+
+<!--div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div --!>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content" >
+      <a href="page1.html">
+      <img src="images_conseil/rec-distance.jpeg" alt="Mountains" style="width:100%;height: 40%;">
+      <h4>Comment récruter à distance ?</h4>
+    </a>
+      <p>En tant que recruteur, lorsque votre entreprise fait le choix de procéder au recrutement à distance, il vous faudra être bien informé sur le déroulement de ce dernier.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="page2.html">
+    <img src="images_conseil/competence2.png" alt="Lights" style="width:100%;height: 40%">
+      <h4>Quelles compétences pour faire la différence demain ?</h4></a>
+      <p>Les compétences du futur représentent l'ensemble des savoirs, savoir-faire et savoir-être qui seront nécessaires à la pratique de professions au cours des prochaines années.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="page3.html">
+    <img src="images_conseil/re-entretien.jpg" alt="Nature" style="width:100%;height: 40%">
+      <h4>Réussir votre entretien</h4></a>
+      <p>Vous avez décroché un entretien et après la joie, c'est le stress ! Pour ne pas paniquer, une seule solution : préparer cet entretien avec méthode. Il faut construire votre pitch, votre discours, et vous entraîner comme un sportif.</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <a href="page4.html">
+      <img src="images_conseil/postuler.jpg" alt="Car" style="width:100%;height: 40%">
+      <h4>Comment postuler efficacement ?</h4></a>
+      <p>Pour augmenter vos chances d'être repéré par les recruteurs et décrocher un job, quelques mesures s'imposent. Évidemment, vous pensez tout de suite au CV et à la lettre de motivation. Indispensables, certes, mais pas suffisants pour obtenir un entretien d'embauche.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a href="page5.html">
+    <img src="images_conseil/stress.jpg" alt="Car" style="width:100%;height: 40%">
+      <h4>Comment gérer son stress avant un entretien d'embauche ?</h4></a>
+      <p>Avec une crise sanitaire toujours en cours, les tendances resteront sensiblement les mêmes que l’année dernière. On observe toutefois de gros changements dans la gestion des recrutements au quotidien qui devront encore plus s’accentuer en 2022.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a href="page6.html">
+    <img src="images_conseil/preparer.jpg" alt="Car" style="width:100%;height: 40%">
+      <h4>Préparer votre candidature</h4></a>
+      <p>Rédiger mon C.V., ma lettre de motivation, prospecter les entreprises, réussir mon entretien d’embauche… La recherche d’une entreprise, ça se prépare !</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <a href="page7.html">
+      <img src="images_conseil/salaire.jpg" alt="Car" style="width:100%;height: 40%">
+      <h4>Négocier son premier salaire</h4></a>
+      <p>Il ne faut pas chercher à tout prix à se débarrasser de cette question, suggère l’expert. En parler, c’est déjà mettre de la valeur sur ses compétences ! Il est bon de donner un chiffre légèrement supérieur à son objectif pour garder une marge de manœuvre</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a href="page8.html">
+    <img src="images_conseil/q-r.png" alt="Car" style="width:100%;height: 40%">
+      <h4>Question reponse entretien d'embauche</h4></a>
+      <p>Les questions posées par les recruteurs ont évidemment une raison d’être. Chaque réponse apportée par le candidat est une information supplémentaire obtenue par le recruteur. Il est évident que si tu n’es pas préparé à cet exercice, tu vas commettre des erreurs, sans forcément t’en rendre compte, et cela jouera en ta défaveur lors de l’entretien.</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a href="page9.html">
+    <img src="images_conseil/critere.jpe" alt="Car" style="width:100%;height: 40%">
+      <h4>Quels sont les principaux critères à évaluer lors d’un recrutement ?</h4></a>
+      <p>Les recruteurs sont de plus en plus frileux et difficiles à convaincre. Les candidats à l’embauche doivent répondre à certains critères pour attirer l’œil des recruteurs. Un chasseur de tête nous livre quelques clés pour mieux comprendre et anticiper ces processus à rallonge.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    background: #f1f1f1;
+  }
+  .content {
+    max-width: 80%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+  p {
+    font-family: Tahoma, Verdana, sans-serif;
+    line-height: 1.8;
+    }
+h1{
+    color: #C9CC3F;
+}
