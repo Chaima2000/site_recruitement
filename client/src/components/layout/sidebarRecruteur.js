@@ -53,7 +53,7 @@ import {GiPaintBrush} from "react-icons/gi";
        
     ];
     return (
-        <div className='container flex'>
+        <div className='container px-0 flex'>
              
             <div style={{width:isOpen ? "250px" : "50px"}} className='sidebar'>
                 <div className='top-section'>

@@ -20,11 +20,7 @@ import Dashbord from './components/private/condidat/Dashboard/Dashbord';
 import DashbordR from './components/private/recruteur/dashbord';
 import ProfileR from './components/auth/profileR';
 import Contact from './components/contact/contact';
-<<<<<<< HEAD
 import Home from './components/home/home';
-=======
-
->>>>>>> 112076031048f862b459be9f6116013886520973
 const router = createBrowserRouter([
     {
         path : '/',
