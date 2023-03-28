@@ -226,8 +226,17 @@ margin-bottom: 10%;
     
 
 }
+
 .x{
     flex: auto;
+}
+.cardshider{
+    background-color: #fff;
+
+    margin: 16px;
+    height: 9vh;
+    padding-top: 2px;
+
 }
 @media only screen and (max-width: 670px) {
     

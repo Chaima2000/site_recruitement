@@ -59,8 +59,8 @@ export default function ProfileR() {
     <Toaster position='top-center' reverseOrder={false}></Toaster>
     <div className='layout'>
        <Header/>
-       <div  className='flex'>
-    <Card className='cardModif '>
+       <div  className='flex '>
+    <div className='cardModif '>
     <div>
     <div className='ml-20 mt-12 famly-layout'>General information</div>
       <form className='py-1 mt-12' onSubmit={formik.handleSubmit}>
@@ -84,9 +84,9 @@ export default function ProfileR() {
       </form>
 
     </div>
-    </Card>
+    </div>
 
-    <Card className='cardprofile '  >
+    <div className='cardprofile '  >
         <div className='flex justify-center items-center'>
         <label htmlFor="profile"  className=''>
           <img src={ apiData?.profile || file ||avatar} alt="avatar" className='img-circle'/>
@@ -107,7 +107,7 @@ export default function ProfileR() {
          <div className='mx-17 px-10 mt-6 borb'>
            <label className='mb-2 famly-layout'>E-mail</label><br></br>
            <input  disabled {...formik.getFieldProps('email')}  className="champProfile mb-2"  type="text" placeholder='email' /> </div>
-        </Card>
+        </div>
   </div>
 </div>
 </div>

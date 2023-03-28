@@ -47,7 +47,7 @@ const formik = useFormik({
  if(serverError) return <h1 className='text-xl text-red-500'>{serverError.message}</h1>
 
 return (
-	<Card className='hide shadow'>
+	<div className='hide shadow cardshider'>
 	<Card.Header > 
 	<div className='hid' >
 
@@ -69,7 +69,7 @@ return (
 		  </div>
 	</div>
 	</Card.Header>
-  </Card>
+  </div>
   
 
 );
